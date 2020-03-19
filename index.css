@@ -478,7 +478,11 @@ a.headerLink {
   display: block;
   font-weight: 600;
   text-align: center;
-  height: 2rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
 }
 
 a.headerLinkActive {
@@ -500,7 +504,6 @@ a:hover {
     font-size: 0.875rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    height: auto;
   }
 }
 
