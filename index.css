@@ -95,6 +95,11 @@ b {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
+code {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
 /**
  * Add the correct font size in all browsers.
  */
@@ -414,7 +419,8 @@ button {
  * 'mono' font family.
  */
 
-pre {
+pre,
+code {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -583,10 +589,30 @@ a:hover {
   margin-top: 1.5rem;
 }
 
+.markdown code {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.875rem;
+  display: inline;
+  background-color: #edf2f7;
+  border-radius: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .markdown pre {
   background-color: #f7fafc;
   border-radius: 0.25rem;
   padding: 1rem;
+}
+
+.markdown pre code {
+  display: block;
+  background-color: transparent;
+  padding: 0;
+  overflow: visible;
+  border-radius: 0;
 }
 
 .markdown ul {
